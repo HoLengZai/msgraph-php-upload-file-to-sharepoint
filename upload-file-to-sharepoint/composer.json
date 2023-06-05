@@ -1,0 +1,7 @@
+{
+  "require": {
+    "microsoft/microsoft-graph": "^1.98.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "vlucas/phpdotenv": "^5.5.0"
+  }
+}
