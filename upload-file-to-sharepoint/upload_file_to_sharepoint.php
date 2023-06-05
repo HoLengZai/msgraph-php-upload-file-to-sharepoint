@@ -58,6 +58,7 @@ $requestBody_content = array(
   '@microsoft.graph.conflictBehavior' => 'rename',
 );
 
+// Create the folders
 $res = $graph->createRequest("POST", "https://graph.microsoft.com/v1.0/sites/$sp_site_id/drive/items/root:/$new_folder_path:/children")
 							->attachBody($requestBody_content)
 							->execute();
