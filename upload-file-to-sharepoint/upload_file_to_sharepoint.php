@@ -65,6 +65,7 @@ $res = $graph->createRequest("POST", "https://graph.microsoft.com/v1.0/sites/$sp
 
 $uploadfile = $filename_fullpath;
 
+// If the file is under 4MB, no need to create an "Upload Session" otherwise It will create one
 $maxuploadsize = 1024 * 1024 * 4;
 if (filesize($uploadfile) < $maxuploadsize) {
 	$graph->createRequest("PUT", "/sites/$sp_site_id/drive/items/root:/$new_folder_path/$new_folder_name/$file_basename:/content")->upload($filename_fullpath);
@@ -103,6 +104,7 @@ else {
 		$prevBytesRead = $bytesRead;
 	}
 }
+
 // For DEBUG only
 //printf("Upload file: [%s] - Done\n", $filename_fullpath);
 printf("Upload file done\n");
