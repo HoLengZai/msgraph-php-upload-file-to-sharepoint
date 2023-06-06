@@ -127,3 +127,10 @@ Same steps like "Create the "Application SharePoint uploader access" Application
 4) You will see your uploaded file in the SharePoint
 
 Note: The script will automatically generate the folder tree structure from the SharePoint Document Library root folder. Please check the PHP script "upload_file_to_sharepoint.php" for more details ("$new_folder_path" and "$new_folder_name" line ~51)
+
+### Verify that your file has been uploaded in SharePoint
+
+1) Edit the script `list_files_from_sharepoint.php` to change the variable `$folder_to_list` value according to the folder that you want to list the content
+2) Run the script `list_files_from_sharepoint.php`
+3) You will see all the folders / files from your the value specify in the variable `$folder_to_list`
+
