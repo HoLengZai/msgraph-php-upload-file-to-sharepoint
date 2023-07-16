@@ -10,7 +10,7 @@ $client_id = $_ENV['CLIENT_ID'];
 $client_secret = $_ENV['CLIENT_SECRET'];
 $sp_site_id = $_ENV['SP_SITE_ID'];
 
-$file_fullpath_to_upload = __DIR__.'/test_upload_file.txt';
+$file_fullpath_to_upload = __DIR__.'/test 1.txt';
 
 # Set alias
 use GuzzleHttp\Client;
