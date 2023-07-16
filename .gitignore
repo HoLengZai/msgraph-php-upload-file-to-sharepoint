@@ -2,6 +2,7 @@
 .env
 .env.granter
 /**/vendor/*
+*.zip
 
 # CakePHP 3
 
